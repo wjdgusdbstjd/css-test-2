@@ -1,0 +1,501 @@
+@media (min-width:768px) {}
+
+/* 태블릿,데스트탑에 대한 스타일 적용 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+    /*border: solid 1px red;*/
+}
+
+header {
+    display: flex;
+    border-bottom: 0.5px solid #9F8338;
+    margin-bottom: 1%;
+    /*10px*/
+    justify-content: space-between;
+}
+
+header #top-menu {
+    width: 250px;
+    position: relative;
+    top: 18px;
+    left: 700px;
+}
+
+header #top-menu a {
+    font-size: 0.75em;
+    /*12px*/
+    color: #CEC2A0;
+}
+
+header #top-menu a:hover {
+    font-weight: 600;
+}
+
+
+header #main-menu {
+    position: relative;
+    top: 55px;
+    margin-top: 1%;
+    /*10px*/
+    margin-left: 1.2%;
+    /*12px*/
+    width: 100%;
+}
+
+header #main-menu a {
+    font-size: 0.875em;
+    /*14px*/
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header ul img {
+    width: 13px;
+    margin-right: 2px;
+}
+
+header ul li {
+    margin: 9px;
+}
+
+header ul li:hover {
+    border-bottom: 2px solid #836826;
+}
+
+header a {
+    text-decoration: none;
+    color: #715714;
+    font-weight: 350;
+}
+
+.logo img {
+    width: 125px;
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+
+.main-img {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-img img {
+    width: 950px;
+    height: 342px;
+}
+
+.main-img p {
+    position: relative;
+    bottom: 300px;
+    line-height: 30px;
+    color: #624C11;
+}
+
+/*---------------------------------------------------------------------------------공통*/
+.section-1 .toaster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 .toaster .toaster-1,
+.toaster-2,
+.toaster-3 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 50px;
+}
+
+.section-1 img {
+    margin-bottom: 10px;
+}
+
+/* .section-1 img:hover{
+    opacity: 0.5;
+} */
+.section-1 .toaster h3 {
+    color: #624C11;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.section-1 .toaster h4 {
+    color: #ACA695;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.section-1 .toaster-1 .color-1,
+.color-2,
+.color-3 {
+    display: flex;
+}
+
+.section-1 .toaster-1 .color-1 .color1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FDFDFD;
+    border: 1px solid #CFCFCF;
+    margin: 5px;
+}
+
+.section-1 .toaster-1 .color-1 .color2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #E7E1D1;
+    border: 1px solid #CFCFCF;
+    margin: 5px;
+}
+
+.section-1 .toaster-2 .color-2 .color1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #43454A;
+    border: 1px solid #CFCFCF;
+    margin: 5px;
+}
+
+.section-1 .toaster-2 .color-2 .color2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #EAEBED;
+    border: 1px solid #CFCFCF;
+    margin: 5px;
+}
+
+.section-1 .toaster-2 .color-2 .color3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #D6CABC;
+    border: 1px solid #CFCFCF;
+    margin: 5px;
+}
+
+.section-1 .toaster-2 .color-2 .color4 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #808589;
+    border: 1px solid #CFCFCF;
+    margin: 5px;
+}
+
+.section-1 .toaster-2 .color-2 .color5 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #595E62;
+    border: 1px solid #CFCFCF;
+    margin: 5px;
+}
+
+.section-1 .toaster-3 .color-3 .color1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #F6EDDC;
+    border: 1px solid #CFCFCF;
+    margin: 5px;
+}
+
+.section-1 .toaster-3 .color-3 .color2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #F6D8CD;
+    border: 1px solid #CFCFCF;
+    margin: 5px;
+}
+
+.section-1 .more {
+    position: absolute;
+    right: 0;
+    top: 240px;
+}
+
+.section-1 .more a {
+    font-size: 12px;
+    color: #8D7E57;
+}
+
+.section-1 .more a:hover {
+    font-weight: bold;
+}
+
+/*---------------------------------------------------------------------------------*/
+.section-2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2-pre {
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+}
+
+.section-2 .section-2-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 .section-2-content .customer-buy,
+.product-buy {
+    margin: 10px;
+}
+
+.section-2-h2 {
+    width: 100%;
+    font-size: 18px;
+    color: #624C11;
+    border-bottom: 1px solid #6D571C;
+    padding: 5px;
+}
+
+.section-2-h2 span {
+    font-size: 13px;
+    font-weight: 400;
+    color: #BDB08C;
+    position: relative;
+    left: 10px;
+    bottom: 2px;
+}
+
+.section-2-pre .buy-btn-1 {
+    position: absolute;
+    left: 890px;
+    bottom: 7px;
+    background: #9F8338;
+    color: white;
+    width: 105px;
+    height: 32px;
+    border: 1px solid #9F8338;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2-pre .buy-btn-1:hover {
+    background: #c2a65a;
+    border: 1px solid #c2a65a;
+}
+
+.section-2 .customer-buy {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 .customer-buy h3,
+.section-2 .product-buy h3 {
+    font-size: 16px;
+    color: #624C11;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section-2 .customer-buy form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 447px;
+    height: 220px;
+    border: 1px solid #6D571C;
+    border-radius: 15px;
+}
+
+.section-2 .customer-buy .form-content {
+    margin-left: 30px;
+}
+
+.section-2 .customer-buy label {
+    color: #624C11;
+}
+
+.section-2 .customer-buy input {
+    margin: 10px;
+}
+
+.section-2 .customer-buy .phone-number-1 {
+    width: 60px;
+}
+
+.section-2 .customer-buy .phone-number-2 {
+    width: 70px;
+}
+
+.section-2 .customer-buy .phone-number-3 {
+    width: 70px;
+}
+
+.section-2 .product-buy {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 .product-select {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 447px;
+    height: 220px;
+    border: 1px solid #6D571C;
+    border-radius: 15px;
+}
+
+.section-2 .product-select form {
+    margin-left: 80px;
+    color: #624C11;
+}
+
+.section-2 .product-select form select {
+    margin: 10px;
+}
+
+.section-2 .buy-btn-2 {
+    background: #9F8338;
+    color: white;
+    width: 105px;
+    height: 32px;
+    border: 1px solid #9F8338;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.section-2 .buy-btn-2:hover {
+    background: #c2a65a;
+    border: 1px solid #c2a65a;
+}
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------*/
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 176px;
+    background-color: #ECE6D5;
+    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 128px;
+    height: 109px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-right: 20px;
+}
+
+footer .footer-left {
+    display: flex;
+    padding-left: 20px;
+}
+
+footer .footer-left ul {
+    list-style-type: none;
+}
+
+footer .footer-left li {
+    margin: 7px;
+    color: #9F8338;
+    position: relative;
+    top: 19px;
+    left: 20px;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+footer .footer-right {
+    display: flex;
+    color: #9F8338;
+    flex-flow: column;
+    margin-top: 20px;
+    padding-right: 30px;
+}
+
+footer .tell {
+    width: 19px;
+    height: 18px;
+    margin: 10px;
+    position: relative;
+    right: 32px;
+    top: 18px;
+}
+
+footer .footer-right h3 {
+    position: relative;
+    bottom: 10px;
+}
+
+footer .footer-right span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer .sns {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    left: 38px;
+}
+
+footer .sns img {
+    width: 29px;
+    margin: 8px;
+}

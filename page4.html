@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/page4.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="./img/logo2.png" alt=""></a>
+            </div>
+            <nav id="top-menu">
+                <!--HOME | LOGIN | JOIN | NOTICE-->
+                <a href="index.html">HOME |</a><a href="#"> LOGIN |</a><a href="#"> JOIN |</a><a href="#"> NOTICE</a>
+            </nav>
+            <nav id="main-menu">
+                <ul>
+                    <li><img src="./img/menu-icon.png" alt=""><a href="page1.html">토스트에 관해</a></li>
+                    <li><img src="./img/menu-icon.png" alt=""><a href="page2.html">토스트 레시피</a></li>
+                    <li><img src="./img/menu-icon.png" alt=""><a href="#">토스트 맛있게 굽는 방법</a></li>
+                    <li><img src="./img/menu-icon.png" alt=""><a href="page4.html">토스트기 구매</a></li>
+                    <li><img src="./img/menu-icon.png" alt=""><a href="#">나만의 토스트 레시피 만들기</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="main-img">
+                <img src="./img/토스트기배너.png" alt="">
+                <p>
+                    더욱 맛있는 토스트를 위해 Tasty Toast가 추천하는 토스트기 브랜드와 몇가지 제품을 소개합니다. <br>
+                    소개하는 제품은 모두 Tasty Toast가 최상의 품질을 보장하며, 사이트에서 바로 구매가 가능합니다.
+                </p>
+            </div>
+        </main>
+
+        <section class="section-1">
+            <div class="toaster">
+                <div class="toaster-1">
+                    <img src="./img/toaster1.png" alt="">
+                    <h3>제니퍼룸 컴팩트 오븐 토스터</h3>
+                    <h4>Jennifer Room Compact Oven Toaster</h4>
+                    <div class="color-1">
+                        <!--<div class="color1"></div>-->
+                        <div class="color1"></div>
+                        <a href="page4-1.html" class="color2"></a>
+                    </div>
+                    <div class="more"><a href="">자세히 보기</a></div>
+                </div>
+                <div class="toaster-2">
+                    <img src="./img/toaster2.png" alt="">
+                    <h3>발뮤다 더 토스터</h3>
+                    <h4>BALMUDA The Toaster</h4>
+                    <div class="color-2">
+                        <div class="color1"></div>
+                        <div class="color2"></div>
+                        <div class="color3"></div>
+                        <div class="color4"></div>
+                        <div class="color5"></div>
+                    </div>
+                    <div class="more"><a href="#">자세히 보기</a></div>
+                </div>
+                <div class="toaster-3">
+                    <img src="./img/toaster3.png" alt="">
+                    <h3>브루노 오븐 토스터</h3>
+                    <h4>BRUNO Oven Toaster</h4>
+                    <div class="color-3">
+                        <div class="color1"></div>
+                        <div class="color2"></div>
+                    </div>
+                    <div class="more"><a href="#">자세히 보기</a></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-2-pre">
+            <h2 class="section-2-h2">구매하기 <span>비회원 구매</span></h2>
+            <a href="" title="Button push blue/green" class="buy-btn-1">로그인 후 구매</a>
+            <!--<button class="buy-btn-1">로그인 후 구매</button>-->
+        </div>
+        <section class="section-2">
+            <div class="section-2-content">
+                <div class="customer-buy">
+                    <h3>주문자 정보 입력</h3>
+                    <form action="customer">
+                        <div class="form-content">
+                            <label>이름 : <input type="text" class="user-name"></label> <br>
+                            <label>주소 : <input type="text" class="address-1"> - <input type="text" class="address-2"></label> <br>
+                            <label>핸드폰 번호 : <input type="text" class="phone-number-1"> - <input type="text"
+                                    class="phone-number-2"> - <input type="text" class="phone-number-3"></label> <br>
+                            <label>주문 확인 아이디 : <input type="text" class="id"></label>
+                        </div>
+                    </form>
+                </div>
+                <div class="product-buy">
+                    <h3>제품 선택</h3>
+                    <div class="product-select">
+                        <form action="producr">
+                            제품명 선택
+                            <select name="product-name">
+                                <option value="Jennifer Room Compact Oven Toaster">제니퍼룸 컴팩트 오븐 토스터</option>
+                                <option value="BALMUDA The Toaster">발뮤다 더 토스터</option>
+                                <option value="BRUNO Oven Toaster">브루노 오븐 토스터</option>
+                            </select> <br>
+                            색상 선택
+                            <select name="product-color">
+                                <option value="white">제니퍼룸 컴팩트 오븐 토스터 - 화이트</option>
+                                <option value="beige-1">제니퍼룸 컴팩트 오븐 토스터 - 베이지</option>
+                                <option value="black">발뮤다 더 토스터 - 블랙</option>
+                                <option value="gray">발뮤다 더 토스터 - 그레이</option>
+                                <option value="beige-2">발뮤다 더 토스터 - 베이지</option>
+                                <option value="gray-2">발뮤다 더 토스터 - 진그레이</option>
+                                <option value="charcoal">발뮤다 더 토스터 - 차콜</option>
+                                <option value="beige-3">브루노 오븐 토스터 - 베이지</option>
+                                <option value="pink">브루노 오븐 토스터 - 핑크</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="buy-btn-2">구매하기</a>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-left">
+            <img class="footer-logo" src="./img/logo2.png" alt="">
+            <ul id="address">
+                <li>개인정보 취급 방침 | 이용안내 | 이메일 무단수집 거부</li>
+                <li>TastyToast (주)</li>
+                <li>대표이사 : 김정현</li>
+                <li>주소 : 경기도 의왕시 내손동</li>
+                <li>전화 : 010-1234-5678</li>
+                <li>COPYRIGHT BY KIMJUNGHYUN COMPANY ALL RIGHTS RESERVED</li>
+            </ul>
+        </div>
+
+        <div class="footer-right">
+            <img class="tell" src="./img/tell-icon.png" alt="">
+            <h3>문의 전화 <span>010-1234-5678</span></h3>
+            <ul class="sns">
+                <li><img src="./img/sns1.png" alt=""></li>
+                <li><img src="./img/sns2.png" alt=""></li>
+                <li><img src="./img/sns3.png" alt=""></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

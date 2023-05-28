@@ -1,0 +1,577 @@
+
+@media (min-width:768px) {} /* 태블릿,데스트탑에 대한 스타일 적용 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+/*미디어 쿼리*/
+/* @media (min-width: 1000px) {
+    #wrap {
+        width: 1000px;
+        margin: 0 auto;
+    }
+} */
+
+
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    /*border: solid 1px red;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    border-bottom: 0.5px solid #9F8338;
+    margin-bottom: 1%; /*10px*/
+    justify-content: space-between;
+}
+
+header #top-menu {
+    width: 250px;
+    position: relative;
+    top: 18px;
+    left: 700px;
+}
+
+header #top-menu a {
+    font-size: 0.75em; /*12px*/
+    color: #CEC2A0;
+}
+
+header #top-menu a:hover {
+    font-weight: 600;
+}
+
+
+header #main-menu {
+    position: relative;
+    top: 55px;
+    margin-top: 1%; /*10px*/
+    margin-left: 1.2%; /*12px*/
+    width: 100%;
+}
+
+header #main-menu a {
+    font-size: 0.875em; /*14px*/
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header ul img {
+    width: 13px;
+    margin-right: 2px;
+}
+
+header ul li {
+    margin: 9px;
+}
+
+header ul li:hover {
+    border-bottom: 2px solid #836826;
+}
+
+header a {
+    text-decoration: none;
+    color: #715714;
+    font-weight: 350;
+}
+
+.logo img {
+    width: 125px;
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+
+.main-imgs img {
+    width: 705px;
+    margin-left: 1px;
+}
+
+#main {
+    float: left;
+}
+
+#recipe-box {
+    float: left;
+    width: 269px;
+    height: 124px;
+    background-color: #ECE6D5;
+    border-radius: 13px;
+    margin-bottom: 5px;
+    margin-left: 23px;
+    padding-bottom: 10px;
+}
+
+#recipe-box h3 {
+    font-size: 0.9rem;
+    color: #624C11;
+    padding: 12px 10px 10px 20px;
+    font-weight: 500;
+}
+
+#recipe-box p {
+    font-size: 0.8rem;
+    color: #624C11;
+    line-height: 23px;
+    padding: 0 10px 10px 30px;
+    float: left;
+}
+
+#recipe-box .line,
+#member-box .line {
+    position: relative;
+    bottom: 12px;
+    width: 269px;
+}
+
+#recipe-box .more1 {
+    float: right;
+    font-size: 12px;
+    color: #624C11;
+    position: relative;
+    top: 53px;
+    right: 12px;
+}
+
+#recipe-box .more1:hover {
+    font-weight: bold;
+    border-bottom: 1px solid #624C11;
+}
+
+#member-box {
+    float: left;
+    width: 269px;
+    height: 147px;
+    background-color: #A08C56;
+    border-radius: 13px;
+    margin-left: 23px;
+}
+
+#member-box h3 {
+    font-size: 0.9rem;
+    color: #513D0A;
+    padding: 12px 10px 10px 20px;
+    font-weight: 500;
+}
+
+#member-box p {
+    font-size: 0.5rem;
+    color: #624C11;
+    line-height: 17px;
+    padding: 0 10px 10px 10px;
+}
+
+#member-box .more1 {
+    float: right;
+    font-size: 12px;
+    color: #624C11;
+    position: relative;
+    bottom: 13px;
+    right: 12px;
+}
+
+#member-box .more1:hover {
+    font-weight: bold;
+    border-bottom: 1px solid #624C11;
+}
+
+.recipe-preview-h {
+    font-size: 18px;
+    color: #624C11;
+    border-bottom: 0.5px solid #9F8338;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.recipe-preview-h span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #BDB08C;
+    position: relative;
+    left: 5px;
+    bottom: 2px;
+}
+
+.recipe-preview-p {
+    font-size: 13px;
+}
+
+#recipe-preview {
+    display: flex;
+    width: 166px;
+    margin-top: 15px;
+}
+
+#recipe-preview img {
+    width: 166px;
+    height: 166px;
+}
+
+#recipe-preview .recipe-1,
+#recipe-preview .recipe-2,
+#recipe-preview .recipe-3 {
+    display: flex;
+}
+
+#recipe-preview h3 {
+    font-size: 14px;
+    color: #624C11;
+    font-weight: 400;
+}
+
+#recipe-preview .recipe-text {
+    background-color: white;
+    width: 166px;
+    height: 166px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-text a {
+    text-decoration: none;
+}
+
+.recipe-text a:hover {
+    font-weight: bold;
+}
+
+.recipe-text .more2 {
+    font-size: 11px;
+    color: #BDB08C;
+    position: relative;
+    top: 10px;
+}
+
+#recipe-share {
+    margin-bottom: 30px;
+}
+
+.recipe-share-h {
+    font-size: 18px;
+    color: #624C11;
+    border-bottom: 0.5px solid #9F8338;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.recipe-share-h span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #BDB08C;
+    position: relative;
+    left: 15px;
+    bottom: 2px;
+}
+
+.recipe-share-more a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #BDB08C;
+    position: relative;
+    left: 486px;
+    bottom: 2px;
+}
+
+.recipe-share-more a:hover {
+    font-weight: bold;
+}
+
+#recipe-share .share-text {
+    font-size: 15px;
+    line-height: 30px;
+    color: #624C11;
+    margin-left: 6px;
+}
+
+#recipe-share .share-text p:hover {
+    font-weight: bold;
+}
+
+#recipe-share .share-text span {
+    font-size: 13px;
+    color: #BDB08C;
+}
+
+#recipe-share .share-text .span1 {
+    margin-left: 434px;
+    margin-bottom: 1px;
+}
+
+#recipe-share .share-text .span2 {
+    margin-left: 293px;
+    margin-bottom: 1px;
+}
+
+#recipe-share .share-text .span3 {
+    margin-left: 322px;
+    margin-bottom: 1px;
+}
+
+#recipe-share .share-text .span4 {
+    margin-left: 563px;
+    margin-bottom: 1px;
+}
+
+#recipe-share .share-text .span5 {
+    margin-left: 369px;
+    margin-bottom: 1px;
+}
+
+.customer-h {
+    font-size: 18px;
+    color: #624C11;
+    border-bottom: 0.5px solid #9F8338;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.customer-h a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #BDB08C;
+    position: relative;
+    left: 839px;
+    bottom: 2px;
+}
+
+.customer-h a:hover {
+    font-weight: bold;
+}
+
+#customer .customer-text {
+    font-size: 15px;
+    line-height: 30px;
+    color: #624C11;
+    margin-left: 6px;
+}
+
+#customer .customer-text p:hover {
+    font-weight: bold;
+}
+
+#customer .customer-text span {
+    font-size: 13px;
+    color: #BDB08C;
+}
+
+#customer .customer-text .span6 {
+    margin-left: 523px;
+    margin-bottom: 1px;
+}
+
+#customer .customer-text .span7 {
+    margin-left: 601px;
+    margin-bottom: 1px;
+}
+
+#customer .customer-text .span8 {
+    margin-left: 583px;
+    margin-bottom: 1px;
+}
+
+#customer .customer-text .span9 {
+    margin-left: 404px;
+    margin-bottom: 1px;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    height: 176px;
+    background-color: #ECE6D5;
+    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 128px;
+    height: 109px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-right: 20px;
+}
+
+footer .footer-left {
+    display: flex;
+    padding-left: 20px;
+}
+
+footer .footer-left ul {
+    list-style-type: none;
+}
+
+footer .footer-left li {
+    margin: 7px;
+    color: #9F8338;
+    position: relative;
+    top: 19px;
+    left: 20px;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+footer .footer-right {
+    display: flex;
+    color: #9F8338;
+    flex-flow: column;
+    margin-top: 20px;
+    padding-right: 30px;
+}
+
+footer .tell {
+    width: 19px;
+    height: 18px;
+    margin: 10px;
+    position: relative;
+    right: 32px;
+    top: 18px;
+}
+
+footer .footer-right h3 {
+    position: relative;
+    bottom: 10px;
+}
+
+footer .footer-right span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer .sns {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    left: 38px;
+}
+
+footer .sns img {
+    width: 29px;
+    margin: 8px;
+}
+
+
+
+
+
+/*main-img-slide - 복잡해서 따로 빼둠*/
+
+.slider {
+    width: 705px;
+    height: 284px;
+    position: relative;
+    /*margin: 0 auto;*/
+    overflow: hidden;
+    /* 현재 슬라이드 오른쪽에 위치한 나머지 슬라이드 들이 보이지 않도록 가림 */
+}
+
+.slider input[type=radio] {
+    display: none;
+}
+
+ul.imgs {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.imgs li {
+    position: absolute;
+    left: 640px;
+    transition-delay: 1s;
+    /* 새 슬라이드가 이동해 오는 동안 이전 슬라이드 이미지가 배경이 보이도록 지연 */
+    padding: 0;
+    margin: 0;
+}
+
+.bullets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    z-index: 2;
+}
+
+.bullets label {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #bfb69f;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+/* 현재 선택된 불릿 배경 흰색으로 구분 표시 */
+.slider input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1) {
+    background-color: #3a3424;
+}
+
+.slider input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2) {
+    background-color: #3a3424;
+}
+
+.slider input[type=radio]:nth-child(3):checked~.bullets>label:nth-child(3) {
+    background-color: #3a3424;
+}
+
+
+.slider input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1) {
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.slider input[type=radio]:nth-child(2):checked~ul.imgs>li:nth-child(2) {
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.slider input[type=radio]:nth-child(3):checked~ul.imgs>li:nth-child(3) {
+    left: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {} /* 핸드폰 디바이스에 대한 스타일 적용 */

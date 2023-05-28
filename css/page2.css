@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+/*미디어 쿼리*/
+/* @media (min-width: 1000px) {
+    #wrap {
+        width: 1000px;
+        margin: 0 auto;
+    }
+} */
+
+.arrow-1 {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+}
+
+.arrow-2 {
+    position: absolute;
+    top: 300px;
+    right: 100px;
+}
+
+#wrap {
+    width: 1000px;
+    height: 2000px;
+    margin: 0 auto;
+    position: relative;
+    /*border: solid 1px red;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    border-bottom: 0.5px solid #9F8338;
+    margin-bottom: 0.2%;
+    /*10px*/
+    justify-content: space-between;
+}
+
+header #top-menu {
+    width: 250px;
+    position: relative;
+    top: 18px;
+    left: 700px;
+}
+
+header #top-menu a {
+    font-size: 0.75em;
+    /*12px*/
+    color: #CEC2A0;
+}
+
+header #top-menu a:hover {
+    font-weight: 600;
+}
+
+
+header #main-menu {
+    position: relative;
+    top: 55px;
+    margin-top: 1%;
+    /*10px*/
+    margin-left: 1.2%;
+    /*12px*/
+    width: 100%;
+}
+
+header #main-menu a {
+    font-size: 0.875em;
+    /*14px*/
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header ul img {
+    width: 13px;
+    margin-right: 2px;
+}
+
+header ul li {
+    margin: 9px;
+}
+
+header ul li:hover {
+    border-bottom: 2px solid #836826;
+}
+
+header a {
+    text-decoration: none;
+    color: #715714;
+    font-weight: 350;
+}
+
+.logo img {
+    width: 125px;
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+
+.side-bar {
+    margin-bottom: 10px;
+}
+
+.side-bar a {
+    color: #624C11;
+    /* border: 3px solid red; */
+}
+
+.side-bar a:hover {
+    font-weight: bold;
+}
+
+.side-bar img {
+    width: 23px;
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+}
+
+.side-bar li:nth-child(1) {
+    font-weight: bold;
+}
+
+.section-1 {
+    padding-left: 20px;
+}
+
+.side-bar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.side-bar ul li {
+    margin: 17px;
+}
+
+.recipe-text {
+    position: relative;
+}
+
+.recipe-text h2 {
+    font-size: 30px;
+    color: #624C11;
+    margin-bottom: 10px;
+}
+
+.recipe-text .recipe-text-bg {
+    position: absolute;
+    top: 10px;
+    left: -6px;
+    z-index: -3;
+    width: 230px;
+}
+
+.recipe-text h3 {
+    font-size: 22px;
+    color: #624C11;
+    font-weight: 600;
+    margin-bottom: 11px;
+}
+
+.recipe-text h3 span {
+    font-size: 17px;
+    color: #624C11;
+    font-weight: 500;
+    margin-left: 30px;
+    position: relative;
+    bottom: 2px;
+}
+
+.recipe-text .recipe {
+    float: left;
+}
+
+.recipe-text .recipe h2 {
+    font-size: 22px;
+}
+
+.recipe-text .recipe h2 span {
+    font-size: 18px;
+    color: #BDB08C;
+    font-weight: 400;
+    margin-left: 20px;
+    position: relative;
+    bottom: 2px;
+}
+
+.recipe-text .recipe p {
+    font-size: 17px;
+    color: #624C11;
+    line-height: 36px;
+}
+
+.recipe-img {
+    float: right;
+    position: relative;
+}
+
+.recipe-img img {
+    width: 310px;
+}
+
+.recipe-img .recipe-img-content {
+    position: absolute;
+    top: -70px;
+    right: 20px;
+}
+
+.recipe-img .recipe-img-content p {
+    font-size: 14px;
+    color: #BDB08C;
+    text-align: center;
+    margin-top: 13px;
+}
+
+/*book-content*/
+
+.section-2 {
+    margin-top: 48px;
+    padding-left: 20px;
+    float: left;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.book-content {
+    position: relative;
+}
+
+.book .book-frame,
+.book-inside {
+    position: absolute;
+    width: 200px;
+    height: 220px;
+    text-align: center;
+    /* box-shadow: 5px 5px 15px #333; */
+}
+
+.book-frame {
+    background: #EEEEDD;
+    transform-origin: left center;
+    transition: 0.7s;
+    z-index: 5;
+}
+
+.book-frame h1 {
+    color: #9F8338;
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+.book-inside {
+    background: #FDFDF0;
+    trnasform-origin: left center;
+    transition: 2s;
+    z-index: 2;
+}
+
+.book-inside h1 {
+    font-size: 20px;
+    color: #9F8338;
+}
+
+.book-inside p {
+    font-size: 15px;
+    color: #9F8338;
+}
+
+.book-inside img {
+    width: 150px;
+}
+
+.book-frame:hover {
+    transform: rotateY(-180deg);
+    background: #666;
+}
+
+.section-2 .section-2-p {
+    width: 200px;
+    font-size: 15px;
+    color: #624C11;
+    position: relative;
+    top: 230px;
+}
+
+.section-2 .section-2-p img {
+    width: 20px;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.section-3 {
+    margin-top: 50px;
+    padding-right: 20px;
+    position: relative;
+}
+
+
+.section-3 .recipe-text-area textarea {
+    float: right;
+    width: 721px;
+    height: 90px;
+    color: #BDB08C;
+    border-radius: 13px;
+    padding: 5px;
+}
+
+.section-3 h3 {
+    font-size: 15px;
+    color: #624C11;
+    padding-left: 255px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.section-3 .text-area #ex_file {
+    margin-left: 800px;
+    position: relative;
+    bottom: 30px;
+    color: #BDB08C;
+}
+
+.section-3 .section-3-btn {
+    margin-left: 896px;
+    padding: 3px 13px 3px 13px;
+    /*위 오른쪽 아래 왼쪽*/
+    background: #9F8338;
+    border: solid 1px #9F8338;
+    border-radius: 6px;
+    color: white;
+    position: relative;
+    bottom: 9px;
+}
+
+.section-3 .text-area-imgs {
+    margin-left: 240px;
+    display: flex;
+    position: relative;
+    bottom: 2px;
+}
+
+.section-3 .text-area-imgs .review {
+    position: relative;
+}
+
+.section-3 .text-area-imgs img {
+    width: 105px;
+    display: block;
+    margin: 5px;
+}
+
+.section-3 .textbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(255, 255, 255);
+}
+
+.section-3 .textbox:hover {
+    opacity: 0.7;
+}
+
+.section-3 .text-area-imgs .text {
+    color: rgb(0, 0, 0);
+    font-size: 5px;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.section-3 .text-area-imgs button {
+    height: 80px;
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.section-3 .text-area-imgs button:hover {
+    font-weight: bold;
+}
+
+.section-3 .text-area-imgs button a {
+    color: #9F8338;
+}
+
+.section-4{
+    margin-top: 60px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 176px;
+    background-color: #ECE6D5;
+    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 128px;
+    height: 109px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-right: 20px;
+}
+
+footer .footer-left {
+    display: flex;
+    padding-left: 20px;
+}
+
+footer .footer-left ul {
+    list-style-type: none;
+}
+
+footer .footer-left li {
+    margin: 7px;
+    color: #9F8338;
+    position: relative;
+    top: 19px;
+    left: 20px;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+footer .footer-right {
+    display: flex;
+    color: #9F8338;
+    flex-flow: column;
+    margin-top: 20px;
+    padding-right: 30px;
+}
+
+footer .tell {
+    width: 19px;
+    height: 18px;
+    margin: 10px;
+    position: relative;
+    right: 32px;
+    top: 18px;
+}
+
+footer .footer-right h3 {
+    position: relative;
+    bottom: 10px;
+}
+
+footer .footer-right span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer .sns {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    left: 38px;
+}
+
+footer .sns img {
+    width: 29px;
+    margin: 8px;
+}
